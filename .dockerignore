@@ -1,0 +1,23 @@
+# ignore Python caches
+__pycache__/
+*.pyc
+
+# ignore Git stuff
+.git
+.gitignore
+
+# ignore local envs and databases
+.env
+*.sqlite3
+
+# ignore virtual environments
+venv/
+env/
+
+# ignore node or frontend stuff if exists
+node_modules/
+
+# ignore Docker artifacts
+Dockerfile
+docker-compose.yml
+*.log
