@@ -21,11 +21,5 @@ urlpatterns = [
     path('api/articles/', include('conduit.apps.articles.urls', namespace='articles')),
     path('api/auth/', include('conduit.apps.authentication.urls', namespace='authentication')),
     path('api/profiles/', include('conduit.apps.profiles.urls', namespace='profiles')),
-]
-
-    path('admin/', admin.site.urls),
-    path('api/articles/', include('conduit.apps.articles.urls', namespace='articles')),
-    path('api/auth/', include('conduit.apps.authentication.urls', namespace='authentication')),
-    path('api/profiles/', include('conduit.apps.profiles.urls', namespace='profiles')),
     ]
 

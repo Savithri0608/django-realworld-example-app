@@ -6,9 +6,11 @@ from .views import (
                 )
 
 app_name = 'articles'  # ✅ this line fixes the namespace error
+app_name = 'authentication'
 
 router = DefaultRouter(trailing_slash=False)
 router.register(r'articles', ArticleViewSet)
+app_name = 'profiles'
 urlpatterns = [
     url(r'^', include(router.urls)),
     url(r'^articles/feed/?$', ArticlesFeedAPIView.as_view()),
